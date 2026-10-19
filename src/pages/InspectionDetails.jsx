@@ -18,10 +18,10 @@ import ComplianceScore from "../components/inspection/ComplianceScore";
 
 /*
   Mock inspection IDs currently available in the frontend.
-
   Later, when the Python backend is connected, this local
   validation will be replaced by the API response.
 */
+
 const validMockInspectionIds = [
   "LM-00117",
   "LM-00118",
@@ -43,9 +43,9 @@ function InspectionDetails() {
 
     This prevents:
       /inspections/xyz123
-
     from incorrectly displaying the Basmati Rice demo record.
   */
+  
   const data = useMemo(() => {
     if (!isValidMockInspection) {
       return null;
@@ -64,6 +64,7 @@ function InspectionDetails() {
     INSPECTION NOT FOUND
     ==========================================================
   */
+  
   if (!data) {
     return (
       <div className="mx-auto flex min-h-[calc(100vh-8rem)] w-full max-w-3xl items-center justify-center">
@@ -77,7 +78,7 @@ function InspectionDetails() {
           </p>
 
           <h1 className="mt-2 text-2xl font-bold tracking-tight text-slate-900">
-            Inspection Not Found
+            Inspection Not Found 
           </h1>
 
           <p className="mx-auto mt-3 max-w-md text-sm leading-6 text-slate-500">
@@ -174,6 +175,7 @@ function InspectionDetails() {
       {/* =====================================================
           SUMMARY
       ====================================================== */}
+      
       <div className="mb-6">
         <ComplianceScore
           score={data.score}
@@ -182,6 +184,7 @@ function InspectionDetails() {
         />
       </div>
 
+      
       {/* =====================================================
           BASIC INFORMATION
       ====================================================== */}
@@ -231,6 +234,7 @@ function InspectionDetails() {
       {/* =====================================================
           PACKAGE EVIDENCE
       ====================================================== */}
+      
       <div className="mb-6 grid grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1.3fr)_minmax(320px,0.7fr)]">
         <div>
           <div className="mb-4">
@@ -252,6 +256,7 @@ function InspectionDetails() {
         </div>
 
         {/* Extracted Fields */}
+        
         <div>
           <div className="mb-4">
             <h2 className="text-base font-bold text-slate-900">
@@ -340,6 +345,7 @@ function InspectionDetails() {
         </div>
 
         {/* Rules */}
+        
         <div className="space-y-3">
           {data.rules.map((rule) => {
             const isExpanded = expandedRule === rule.rule_id;
@@ -452,6 +458,7 @@ function InspectionDetails() {
       {/* =====================================================
           FOOTER
       ====================================================== */}
+      
       <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">

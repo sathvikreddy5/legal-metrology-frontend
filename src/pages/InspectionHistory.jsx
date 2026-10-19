@@ -21,6 +21,7 @@ const inspections = [
     score: 82,
     status: "REVIEW",
   },
+  
   {
     inspection_id: "LM-00123",
     product: "Sunflower Oil",
@@ -29,6 +30,7 @@ const inspections = [
     score: 96,
     status: "PASS",
   },
+  
   {
     inspection_id: "LM-00122",
     product: "Washing Powder",
@@ -37,6 +39,7 @@ const inspections = [
     score: 91,
     status: "PASS",
   },
+  
   {
     inspection_id: "LM-00121",
     product: "Packaged Sugar",
@@ -45,6 +48,7 @@ const inspections = [
     score: 68,
     status: "FAIL",
   },
+  
   {
     inspection_id: "LM-00120",
     product: "Bath Soap",
@@ -53,6 +57,7 @@ const inspections = [
     score: 88,
     status: "REVIEW",
   },
+  
   {
     inspection_id: "LM-00119",
     product: "Tea Powder",
@@ -61,6 +66,7 @@ const inspections = [
     score: 97,
     status: "PASS",
   },
+  
   {
     inspection_id: "LM-00118",
     product: "Biscuits",
@@ -69,6 +75,7 @@ const inspections = [
     score: 94,
     status: "PASS",
   },
+  
   {
     inspection_id: "LM-00117",
     product: "Detergent Liquid",
@@ -77,6 +84,7 @@ const inspections = [
     score: 72,
     status: "REVIEW",
   },
+  
 ];
 
 function InspectionHistory() {
@@ -134,7 +142,7 @@ function InspectionHistory() {
             </h1>
 
             <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500">
-              Search and review previously completed package inspections and
+              Search & review previously completed package inspections and
               their compliance results.
             </p>
           </div>

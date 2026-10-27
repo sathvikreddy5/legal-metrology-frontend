@@ -1,15 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import {
-  AlertCircle,
-  CheckCircle2,
-  Circle,
-  FileImage,
-  Loader2,
-  ShieldCheck,
-  Sparkles,
-} from "lucide-react";
-
+import { AlertCircle, CheckCircle2, Circle, FileImage, Loader2, ShieldCheck, Sparkles, } from "lucide-react";
 import { getInspection } from "../services/inspectionService";
 
 const PROCESSING_STAGES = [

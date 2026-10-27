@@ -1,20 +1,6 @@
 import { useState } from "react";
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
-
-import {
-  AlertCircle,
-  ArrowRight,
-  CheckCircle2,
-  Eye,
-  EyeOff,
-  FileCheck2,
-  LockKeyhole,
-  Scale,
-  ScanSearch,
-  ShieldCheck,
-  UserRound,
-} from "lucide-react";
-
+import { AlertCircle, ArrowRight, CheckCircle2, Eye, EyeOff, FileCheck2, LockKeyhole,  Scale, ScanSearch, ShieldCheck, UserRound, } from "lucide-react";
 import { useAuth } from "../context/AuthContext";
 
 function Login() {
@@ -25,9 +11,7 @@ function Login() {
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
   const [showPassword, setShowPassword] = useState(false);
-
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 

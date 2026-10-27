@@ -1,9 +1,7 @@
 const inspectionData = {
   inspection_id: "LM-00124",
-
   image_url:
     "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=1200&q=85",
-
   image_width: 1200,
   image_height: 1500,
 

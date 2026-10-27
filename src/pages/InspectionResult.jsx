@@ -1,18 +1,7 @@
 import { useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import {
-  ArrowLeft,
-  ArrowRight,
-  CheckCircle2,
-  CircleAlert,
-  FileText,
-  Info,
-  ScanSearch,
-  ShieldCheck,
-  XCircle,
-} from "lucide-react";
-
+import { ArrowLeft, ArrowRight, CheckCircle2, CircleAlert, FileText,  Info, ScanSearch, ShieldCheck, XCircle, } from "lucide-react";
 import inspectionData from "../mock/inspectionData";
 import ImageViewer from "../components/inspection/ImageViewer";
 import StatusBadge from "../components/inspection/StatusBadge";

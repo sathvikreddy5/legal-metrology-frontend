@@ -1,16 +1,6 @@
 import { useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import {
-  ArrowLeft,
-  CalendarDays,
-  ChevronDown,
-  ChevronUp,
-  FileText,
-  Package,
-  ShieldCheck,
-  UserRound,
-} from "lucide-react";
-
+import { ArrowLeft, CalendarDays, ChevronDown, ChevronUp, FileText, Package, ShieldCheck, UserRound, } from "lucide-react";
 import inspectionData from "../mock/inspectionData";
 import StatusBadge from "../components/inspection/StatusBadge";
 import ImageViewer from "../components/inspection/ImageViewer";
@@ -35,7 +25,6 @@ const validMockInspectionIds = [
 
 function InspectionDetails() {
   const { inspectionId } = useParams();
-
   const isValidMockInspection = validMockInspectionIds.includes(inspectionId);
 
   /*
@@ -111,9 +100,7 @@ function InspectionDetails() {
   }
 
   const passedRules = data.rules.filter((rule) => rule.status === "PASS");
-
   const reviewRules = data.rules.filter((rule) => rule.status === "REVIEW");
-
   const failedRules = data.rules.filter((rule) => rule.status === "FAIL");
 
   const getConfidenceClass = (confidence) => {

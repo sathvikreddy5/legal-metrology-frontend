@@ -1,25 +1,6 @@
-import {
-  AlertTriangle,
-  ArrowRight,
-  CheckCircle2,
-  ClipboardCheck,
-  FileWarning,
-  Plus,
-  Search,
-  ShieldCheck,
-  TrendingUp,
-} from "lucide-react";
+import { AlertTriangle, ArrowRight, CheckCircle2, ClipboardCheck, FileWarning, Plus, Search, ShieldCheck, TrendingUp, } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import {
-  Bar,
-  BarChart,
-  CartesianGrid,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from "recharts";
-
+import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis, } from "recharts";
 import { useAuth } from "../context/AuthContext";
 import dashboardData from "../mock/dashboardData";
 import StatCard from "../components/dashboard/StatCard";
@@ -28,10 +9,8 @@ import StatusBadge from "../components/inspection/StatusBadge";
 function Dashboard() {
   const navigate = useNavigate();
   const { user } = useAuth();
-
   const overview = dashboardData.overview;
   const myActivity = dashboardData.myActivity;
-
   const userName = user?.name || "Inspector";
   const firstName = userName.split(" ")[0];
 

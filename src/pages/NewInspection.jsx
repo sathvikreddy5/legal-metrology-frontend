@@ -1,20 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import {
-  AlertCircle,
-  ArrowRight,
-  CheckCircle2,
-  FileImage,
-  ImagePlus,
-  RotateCcw,
-  Upload,
-  X,
-} from "lucide-react";
-
+import { AlertCircle,  ArrowRight, CheckCircle2, FileImage, ImagePlus, RotateCcw, Upload , X, } from "lucide-react";
 import { analyzeInspection } from "../services/inspectionService";
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024;
-
 const CATEGORIES = [
   "Food",
   "Beverages",
